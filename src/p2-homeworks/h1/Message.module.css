@@ -1,0 +1,42 @@
+.message {
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.avatar {
+    width: 50px;
+}
+
+.messageWrapper {
+    margin-left: 50px;
+
+    width: 250px;
+    height: 100px;
+    border-radius: 23px 23px 23px 0;
+    background-color: forestgreen;
+}
+
+.nameBlock {
+    padding-top: 10px;
+    padding-left: 14px;
+    font-size: 20px;
+    color: cyan;
+    font-weight: bold;
+
+}
+
+.messageBlock{
+    padding-left: 14px;
+    padding-top: 5px;
+    color: cornsilk;
+    font-size: large;
+    font-weight: bold;
+}
+
+.timeBlock {
+    text-align: end;
+    margin-right: 10px;
+    font-size: 19px;
+    color: cadetblue;
+}
