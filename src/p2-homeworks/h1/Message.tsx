@@ -13,7 +13,9 @@ function Message(props: MessageType) {
         <>
 
             <div className={s.message}>
-                <img className={s.avatar} src={props.avatar} alt=""/>
+                <div className={s.avatarWrapper}>
+                    <img className={s.avatar} src={props.avatar} alt=""/>
+                </div>
                 <div className={s.messageWrapper}>
                     <div className={s.nameBlock}>
                         {props.name}
