@@ -1,3 +1,46 @@
 .someClass {
-
+    margin-top: 10px;
+    margin-left: 25px;
 }
+
+.element {
+    padding: 5px 0;
+}
+
+.btnClass {
+    margin-left: 5px;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    border: none;
+}
+
+.btnDeleteClass {
+    margin-left: 5px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    /*width: 50px;*/
+    border: none;
+}
+
+.btnClass:hover {
+    opacity: 0.9;
+}
+
+.btnDeleteClass:hover {
+    opacity: 0.9;
+}
+
+.span {
+    margin-right: 5px;
+    color: white;
+    padding: 1px 3px 1px 3px;
+    border: none;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
