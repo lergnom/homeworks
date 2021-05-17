@@ -3,5 +3,30 @@
 }
 
 .error {
+    outline: none;
     border: 1px solid red;
+
+}
+
+.access {
+    outline: none;
+
+    border: 1px solid green;
+
+}
+
+.formWrapper {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formWrapper button {
+    margin-left: 5px;
+}
+
+.errorText {
+    height: 10px;
+    color: red;
 }
