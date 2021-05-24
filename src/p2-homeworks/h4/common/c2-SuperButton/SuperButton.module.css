@@ -1,5 +1,13 @@
 .default {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
 
+.default:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
 .red {
