@@ -2,7 +2,21 @@
     color: blue;
 }
 
+.menu {
+    transition: 1.55s opacity, 1.55s visibility;
+}
+
 .navLink {
     padding: 5px;
 
+}
+
+.links {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.links:hover {
+
+    opacity: 0.9;
 }
