@@ -1,0 +1,5 @@
+.span {
+    display: inline-block;
+    height: calc(1.5em + .75rem + 2px);
+    cursor: pointer
+}
