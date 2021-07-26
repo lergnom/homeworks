@@ -7,11 +7,14 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
+        setShow(false)
+
         // stop
     }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
+            setDate(Data)
             // setDate
         }, 1000)
         setTimerId(id)
@@ -23,8 +26,11 @@ function Clock() {
     const onMouseLeave = () => {
         // close
     }
-
-    const stringTime = 'Time' // fix with date
+    let Data = new Date();
+    let Hour = Data.getHours();
+    let Minutes = Data.getMinutes();
+    let Seconds = Data.getSeconds();
+    const stringTime = Hour + ':' + Minutes + ':' + Seconds // fix with date
     const stringDate = 'Date' // fix with date
 
     return (
