@@ -7,8 +7,7 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        setShow(false)
-
+        clearInterval(timerId)
         // stop
     }
     const start = () => {
@@ -21,9 +20,11 @@ function Clock() {
     }
 
     const onMouseEnter = () => {
-        // show
+        setShow(true)
+        // showset
     }
     const onMouseLeave = () => {
+         setShow(false)
         // close
     }
     let Data = new Date();
@@ -31,7 +32,7 @@ function Clock() {
     let Minutes = Data.getMinutes();
     let Seconds = Data.getSeconds();
     const stringTime = Hour + ':' + Minutes + ':' + Seconds // fix with date
-    const stringDate = 'Date' // fix with date
+    const stringDate = date?.toLocaleDateString()
 
     return (
         <div>
