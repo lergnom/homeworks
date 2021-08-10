@@ -3,6 +3,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {InitStateType, loadingAC} from "./bll/loadingReducer";
 import {AppStoreType} from "./bll/store";
+import {Preloader} from './common/preloader/Preloader';
 
 function HW10() {
     // useSelector, useDispatch
@@ -27,7 +28,8 @@ function HW10() {
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <Preloader/>
+                    // <div>крутилка...</div>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
