@@ -1,0 +1,51 @@
+.slider {
+    position: relative;
+    margin: 10px;
+    width: 250px;
+    height: 5px;
+    background: #709fdc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.min {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    background: #709fdc;
+}
+
+.minDrag {
+    position: absolute;
+    right: -7.5px;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #071739;
+    transition: all 0.3s;
+}
+
+.max {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 240px;
+    height: 5px;
+    border-radius: 5px;
+    background: #274684;
+}
+
+.maxDrag {
+    position: absolute;
+    right: -7.5px;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #071739;
+    transition: all 0.3s;
+}
