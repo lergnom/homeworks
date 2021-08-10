@@ -1,14 +1,26 @@
-const initState = {
+const SET_PRELOADER = "SET_PRELOADER"
 
+export type InitStateType = {
+    isActive: boolean,
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+const initState = {
+    isActive: false,
+}
+
+export const loadingReducer = (state: InitStateType = initState, action: DispatchLoadingProps): InitStateType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case SET_PRELOADER: {
+            return {...state, isActive: action.isActive}
         }
-        default: return state
+        default:
+            return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+type DispatchLoadingProps = {
+    type: 'SET_PRELOADER'
+    isActive: boolean
+}
+
+export const loadingAC = (isActive: boolean): DispatchLoadingProps => ({type: SET_PRELOADER, isActive})
