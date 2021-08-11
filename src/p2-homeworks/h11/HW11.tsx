@@ -13,6 +13,7 @@ function HW11() {
     const onChangeDouble = (arr: [number, number]) => {
         setValue1(arr[0])
         setValue2(arr[1])
+
     }
 
     return (

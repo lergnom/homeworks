@@ -1,14 +1,28 @@
-const initState = {
+const CHANGE_THEME = 'CHANGE_THEME'
 
+
+export type InitStateTypeProps = {
+    theme: string
+
+}
+
+const initState: InitStateTypeProps = {
+    theme: 'some'
 };
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+export const themeReducer = (state: InitStateTypeProps = initState, action: DispatchChangeTheme): InitStateTypeProps => { // fix any
     switch (action.type) {
-        case "": {
-            return state;
+        case "CHANGE_THEME": {
+            return {...state, theme: action.theme};
         }
-        default: return state;
+        default:
+            return state;
     }
 };
 
-export const changeThemeC = (): any => {}; // fix any
+export type DispatchChangeTheme = {
+    type: 'CHANGE_THEME'
+    theme: string
+}
+
+export const changeThemeAC = (theme: string): DispatchChangeTheme => ({type: CHANGE_THEME, theme}); // fix any
