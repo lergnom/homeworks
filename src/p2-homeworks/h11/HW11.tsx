@@ -10,6 +10,11 @@ function HW11() {
         setValue1(n)
     }
 
+    const onChangeDouble = (arr: [number, number]) => {
+        setValue1(arr[0])
+        setValue2(arr[1])
+    }
+
     return (
         <div>
             <hr/>
@@ -25,7 +30,7 @@ function HW11() {
 
             <div>
                 <span>{value1}</span>
-                <SuperDoubleRange
+                <SuperDoubleRange onChangeRange={onChangeDouble} value={[value1, value2]}
                     // сделать так чтоб value1 и value2 изменялось
                 />
                 <span>{value2}</span>
